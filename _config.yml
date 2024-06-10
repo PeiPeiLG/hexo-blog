@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Front-end little goddess
+title: Be my own goddess
 subtitle: ""
 description: "啊培培的第一個部落格誕生"
 keywords: 啊培培, PeiPeiLG, 部落格, blog, pei, Angular
 author: PeiPeiLG
-language: zh-tw
+language: en
 timezone: "Asia/Taipei"
 
 # URL
@@ -37,32 +37,30 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ""
+  exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
 highlight:
   enable: false
-  line_number: true
+  line_number: false
   auto_detect: false
-  tab_replace: ""
-  wrap: true
-  hljs: false
-prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ""
+  tab_replace: ''
+  wrap: false
+  hljs: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ""
-  per_page: 5
+  path: ''
+  per_page: 10
   order_by: -date
 
 # Category & Tag
@@ -81,7 +79,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: "mtime"
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -97,9 +95,40 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-aomori
+
+# aomori_customized settings
+aomori_logo: /images/pei.jpg
+aomori_logo_typed_animated: true
+aomori_menu:
+  Home: /
+  About: /about
+  Archives: /archives
+aomori_widgets:
+  - toc # Article navigation
+  - category  # Article classification
+  - tag # Article tags
+  - recent_posts  # latest articles
+  - archive # Article Archive
+aomori_copyright: false
+aomori_social:
+  -
+    icon: github # Boxicons name
+    type: logo # Boxicons type
+    url: https://github.com/sherryliao21 # Your social link
+  -
+    icon: linkedin-square
+    type: logo
+    url: https://www.linkedin.com/in/sherrycliao/
+  -
+    icon: medium
+    type: logo
+    url: https://icaughtacode.medium.com/
+aomori_google_analytics: 'UA-XXXXXXXXX-X'
+aomori_favicon: 📓
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: ''

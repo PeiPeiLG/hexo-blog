@@ -121,7 +121,14 @@ aomori_social:
 
 aomori_google_analytics: 'UA-XXXXXXXXX-X'
 
-
+githubEmojis:
+  enable: true
+  className: github-emoji
+  unicode: true
+  styles:
+    display: inline
+    vertical-align: middle # Freemind适用
+  localEmojis:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

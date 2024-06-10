@@ -8,7 +8,7 @@ subtitle: ""
 description: "啊培培的第一個部落格誕生"
 keywords: 啊培培, PeiPeiLG, 部落格, blog, pei, Angular
 author: PeiPeiLG
-language: en
+language: zh-TW
 timezone: "Asia/Taipei"
 
 # URL
@@ -98,7 +98,7 @@ ignore:
 theme: hexo-theme-aomori
 
 # aomori_customized settings
-aomori_logo: /images/pei.jpg
+aomori_logo: /images/logo-pei-black.jpg
 aomori_logo_typed_animated: true
 aomori_menu:
   Home: /
@@ -113,19 +113,14 @@ aomori_widgets:
 aomori_copyright: false
 aomori_social:
   -
-    icon: github # Boxicons name
-    type: logo # Boxicons type
-    url: https://github.com/sherryliao21 # Your social link
+    icon: logo-github # Boxicons name
+    url: https://github.com/PeiPeiLG # Your social link
   -
-    icon: linkedin-square
-    type: logo
-    url: https://www.linkedin.com/in/sherrycliao/
-  -
-    icon: medium
-    type: logo
-    url: https://icaughtacode.medium.com/
+    icon: logo-linkedin
+    url: https://www.linkedin.com/in/enpei-lo-2b24a5248/
+
 aomori_google_analytics: 'UA-XXXXXXXXX-X'
-aomori_favicon: 📓
+
 
 
 # Deployment
